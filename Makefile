@@ -1,2 +1,4 @@
+LIBS = curses 
+
 all:
-	gcc ./src/*.c -o ./bin/less
+	gcc ./src/*.c -l $(LIBS) -o ./bin/less
