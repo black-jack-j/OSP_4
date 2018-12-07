@@ -32,6 +32,14 @@ int main(int argc, char* argv[])
 	while(1){
 		d = getch();
 		if (d == 'q') break;
+		if (d ==  'c')
+		{
+			clear();
+			move(0, 0);
+			r = 0;
+			c = 0;
+			refresh();
+		}
 		draw(d);
 	}
 	endwin();
