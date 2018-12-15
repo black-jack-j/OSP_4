@@ -6,6 +6,10 @@ extern void add_ifile(char* path);
 extern void print_ifiles();
 
 int main(int argc, char* argv[]){
+	if(argc < 2){
+		fprintf(stderr, "file name expected\n");
+		return 1;
+	}
 	for(int i = 1; i < argc; i++){
 		add_ifile(argv[i]);
 	}
