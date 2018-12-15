@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <fcntl.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+size_t BUFF_SIZE = 256;
 
 extern struct ifile_list LIST;
 extern void add_ifile(char* path);
