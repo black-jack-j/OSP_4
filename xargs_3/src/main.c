@@ -17,6 +17,6 @@ int main(int argc, char* argv[]){
 		}
 	}
 	tokenize(cmd, stdin);
-	exec_cmd(cmd);
+	if(!cmd->called) exec_cmd(cmd);
 	return 0;
 }

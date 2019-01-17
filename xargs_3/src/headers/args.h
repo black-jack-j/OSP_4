@@ -6,8 +6,10 @@ struct cmd
 	int argc;
 	char** argv;
 	int argv_alloc;
-	char* argbuf;
 	int offset;
+	char* argbuf;
+	long arg_max;
+	int called;
 };
 
 struct cmd* new_cmd();
